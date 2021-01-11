@@ -12,50 +12,70 @@
   </head>
 <body>
 
-    <nav id="header-nav" class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Food, LLC</a>
+  <!-- Build out navbar with Food LLC brand, only visible on xs screen -->
+  <nav id="header-nav" class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Food, LLC</a>
 
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-
-        <div id="collapsable-nav" class="collapse navbar-collapse">
-           <ul id="nav-list" class="nav navbar-nav navbar-right text-center">
-            <li class="nav-item">
-              <a class="nav-link visible-xs" href="#">Chicken</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link visible-xs" href="#">Beef</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link visible-xs" href="#">Sushi</a>
-            </li>
-          </ul>
-        </div>
+        <!-- Hamburger menu icons -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
-    </nav>
 
-    <header>
-      <h1 class="text-center">Our Menu</h1></a>
-    </header>
-    <br>
-    <div id="chicken" class="container col-xs-12"> 
-      <div>
-        <h2 class="text-center">Chicken</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. At in tellus integer feugiat scelerisque varius morbi enim nunc. Pharetra diam sit amet nisl suscipit adipiscing bibendum. Ac orci phasellus egestas tellus rutrum tellus. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Faucibus vitae aliquet nec ullamcorper. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Ornare lectus sit amet est placerat in egestas erat. Erat imperdiet sed euismod nisi porta lorem mollis aliquam.
-
-        Ut tortor pretium viverra suspendisse. In vitae turpis massa sed elementum tempus. Pharetra vel turpis nunc eget lorem dolor sed viverra. Amet dictum sit amet justo. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui. Amet nulla facilisi morbi tempus iaculis urna id volutpat. Cursus sit amet dictum sit amet. Lacus sed viverra tellus in. Ullamcorper malesuada proin libero nunc consequat interdum varius sit. Rhoncus dolor purus non enim praesent elementum facilisis leo. A erat nam at lectus urna duis convallis convallis tellus.
-        
-        Et netus et malesuada fames. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Lectus nulla at volutpat diam ut. Lacus suspendisse faucibus interdum posuere. Non arcu risus quis varius quam quisque. Maecenas ultricies mi eget mauris pharetra et ultrices neque. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Vehicula ipsum a arcu cursus. Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Commodo elit at imperdiet dui accumsan sit amet nulla facilisi. In fermentum et sollicitudin ac orci phasellus. Ac odio tempor orci dapibus ultrices in iaculis. Sem nulla pharetra diam sit. Ultrices vitae auctor eu augue ut. Tristique risus nec feugiat in fermentum posuere urna nec tincidunt. Aliquet lectus proin nibh nisl condimentum.</p>
+      <!-- Navbar only visible on xs mobile view -->
+      <div id="collapsable-nav" class="collapse navbar-collapse">
+         <ul id="nav-list" class="nav navbar-nav navbar-right text-center">
+          <li class="nav-item">
+            <a class="nav-link visible-xs" href="#chicken">Chicken</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link visible-xs" href="#beef">Beef</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link visible-xs" href="#sushi">Sushi</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
+    <!-- Anchor top of page for jump to top buttons in sections -->
+    <header>
+      <h1 id="top-of-page" class="text-center">Our Menu</h1></a>
+    </header>
+    <br>
+    <!-- Each item is built in a container with a heading, text, and jump to top link. Sushi moves to its own row in md/s screens, stacked in xs. -->
+    <div class="row">
+      <div id="chicken" class="col-lg-4 col-md-6 col-xs-12"> 
+        <div class="container col-xs-12">
+          <h2 class="text-center">Chicken</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. At in tellus integer feugiat scelerisque varius morbi enim nunc. Pharetra diam sit amet nisl suscipit adipiscing bibendum. Ac orci phasellus egestas tellus rutrum tellus. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Faucibus vitae aliquet nec ullamcorper. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Ornare lectus sit amet est placerat in egestas erat. Erat imperdiet sed euismod nisi porta lorem mollis aliquam.
+          </p>
+          <a class="jump" href="#top-of-page">Back to top</a>
+        </div>
+      </div>
+      <div id="beef" class="col-lg-4 col-md-6 col-xs-12"> 
+        <div class="container col-xs-12">
+          <h2 class="text-center">Beef</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. At in tellus integer feugiat scelerisque varius morbi enim nunc. Pharetra diam sit amet nisl suscipit adipiscing bibendum. Ac orci phasellus egestas tellus rutrum tellus. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Faucibus vitae aliquet nec ullamcorper. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Ornare lectus sit amet est placerat in egestas erat. Erat imperdiet sed euismod nisi porta lorem mollis aliquam.
+          </p>
+          <a class="jump" href="#top-of-page">Back to top</a>
+        </div>
+      </div>
+      <div id="sushi" class="col-lg-4 col-md-12 col-xs-12"> 
+        <div class="container col-xs-12">
+          <h2 class="text-center">Sushi</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. At in tellus integer feugiat scelerisque varius morbi enim nunc. Pharetra diam sit amet nisl suscipit adipiscing bibendum. Ac orci phasellus egestas tellus rutrum tellus. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Faucibus vitae aliquet nec ullamcorper. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Ornare lectus sit amet est placerat in egestas erat. Erat imperdiet sed euismod nisi porta lorem mollis aliquam.
+          </p>
+          <a class="jump" href="#top-of-page">Back to top</a>
+        </div>
+      </div>
 
+    </div>
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
